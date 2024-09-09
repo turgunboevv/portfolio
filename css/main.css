@@ -1,0 +1,739 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffdd55;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.contact_modal {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.258);
+  z-index: 99;
+  display: none;
+}
+.contact_modal .modal {
+  border: 2px solid #0acf83;
+  width: 400px;
+  padding: 30px;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #00c6ae;
+  margin: 0 auto;
+}
+.contact_modal .modal .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.contact_modal .modal .cards a {
+  text-decoration: none;
+  color: black;
+}
+.contact_modal .modal .cards .card p {
+  text-align: center;
+}
+
+.link-modal {
+  display: none;
+}
+
+.taa-logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+header nav {
+  background-color: black;
+  border-radius: 0px 0px 35.6px 35.6px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  max-width: 1150px;
+}
+header nav .container #menu {
+  color: white;
+  display: none;
+}
+header nav .container a {
+  display: block;
+}
+header nav .container a img:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+header nav .container a img:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+header nav .container .links {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+header nav .container .links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  font-weight: 600;
+}
+header nav .container .links li a:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+header nav .container .links li a:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+header .hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+header .hero .container .info .name {
+  color: #18191f;
+}
+header .hero .container .info .name h1 {
+  font-size: 64px;
+  font-weight: 800;
+}
+header .hero .container .info p {
+  font-size: 25px;
+  color: #474a57;
+  font-weight: 600;
+  padding: 30px 0px;
+}
+header .hero .container .info .btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .hero .container .info .btns .btn {
+  background-color: #00c6ae;
+  border-radius: 15px;
+  padding: 0px 5px 5px 0px;
+}
+header .hero .container .info .btns .btn:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+header .hero .container .info .btns .btn:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+header .hero .container .info .btns .btn button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  background-color: black;
+}
+header .hero .container .right .img {
+  background-color: black;
+  padding: 0px 5px 5px 0px;
+  border-radius: 20px;
+}
+header .hero .container .right .img img {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+main .sec1 .container .about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #106ee8;
+  border-radius: 20px;
+  padding: 50px 50px;
+  flex-wrap: wrap;
+}
+main .sec1 .container .about img {
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+main .sec1 .container .about .info h1 {
+  color: white;
+  font-size: 54px;
+}
+main .sec1 .container .about .info h2 {
+  font-size: 25px;
+  color: #ffdd55;
+  padding: 10px 0px;
+}
+main .sec1 .container .about .info p {
+  width: 654px;
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+main .sec1 .container .about .info .btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 0px;
+}
+main .sec1 .container .about .info .btns .btn {
+  background-color: #00c6ae;
+  border-radius: 15px;
+  padding: 0px 5px 5px 0px;
+}
+main .sec1 .container .about .info .btns .btn:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+main .sec1 .container .about .info .btns .btn:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+main .sec1 .container .about .info .btns .btn button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+  border: none;
+  background-color: black;
+}
+main .sec2 {
+  background-color: #eb7711;
+  margin: 70px 0px;
+}
+main .sec2 .container {
+  padding: 20px 0px;
+}
+main .sec2 .container .head {
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0px;
+}
+main .sec2 .container .head h1 {
+  color: black;
+  font-size: 54px;
+  font-weight: 800;
+  padding: 30px 0px;
+}
+main .sec2 .container .head p {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+main .sec2 .container .block .box {
+  background-color: #a259ff;
+  border: 2px solid black;
+  width: 434px;
+  padding: 30px 30px;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+main .sec2 .container .block .box:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+main .sec2 .container .block .box:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+main .sec2 .container .block .box .number {
+  background-color: #0acf83;
+  width: 250px;
+  border-radius: 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: -30px;
+  margin: 0 auto;
+  left: 88px;
+}
+main .sec2 .container .block .box .number:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+main .sec2 .container .block .box .number:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+main .sec2 .container .block .box .number h1 {
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+main .sec2 .container .block .box h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 33px;
+  font-weight: 800;
+  padding: 40px 0px;
+}
+main .sec2 .container .block .box p {
+  margin: 0 auto;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  width: 353px;
+  padding: 0px 0px 30px 0px;
+}
+main .sec2 .container .block .box button {
+  padding: 7px 50px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffdd55;
+}
+main .sec2 .container .block .box button:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+main .sec2 .container .block .box button:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+main .sec3 {
+  display: block;
+  background-color: #0acf83;
+  margin-bottom: 70px;
+}
+main .sec3 .container {
+  padding: 100px 0px;
+}
+main .sec3 .container h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  padding: 30px 0px;
+}
+main .sec3 .container .btn button {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border: none;
+  font-size: 44px;
+  font-weight: 700;
+  color: black;
+  border-radius: 20px;
+  background-color: #ffdd55;
+}
+main .sec3 .container .btn button:hover {
+  transform: scale(1.04);
+  transition: all 0.3s ease;
+}
+main .sec3 .container .btn button:active {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+footer .container .head {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+footer .container .head h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #18191f;
+}
+footer .container h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  width: 852px;
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+footer .container .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .container .cards .first {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact_modal.active {
+  display: flex;
+}
+
+@media (max-width: 467px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .container {
+    padding: 0px 10px;
+  }
+  .link-modal {
+    display: flex;
+    width: 50%;
+    position: fixed;
+    z-index: 100;
+    border: 2px solid #ffdd55;
+    height: 100vh;
+    background-color: black;
+    border-radius: 0px 0px 35.6px 0px;
+    display: none;
+    overflow-x: hidden;
+    border-top: none;
+    border-left: none;
+  }
+  .link-modal #x-mark {
+    color: white;
+    font-size: 35px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .link-modal .links2 {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .link-modal .links2 li a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .link-modal .links2 li a:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  .link-modal .links2 li a:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  .link-modal.active {
+    display: flex;
+  }
+  header nav .container {
+    padding: 10px 20px;
+  }
+  header nav .container #menu {
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  header nav .container #menu:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  header nav .container #menu:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  header nav .container .links {
+    display: none;
+  }
+  header .hero .info {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0px;
+  }
+  header .hero .right .img {
+    background-color: black;
+    padding: 0px 5px 5px 0px;
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  header .hero .right .img img {
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  main .sec1 .container .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #106ee8;
+    border-radius: 20px;
+    padding: 50px 50px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  main .sec1 .container .about img {
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  main .sec1 .container .about .info {
+    width: 300px;
+  }
+  main .sec1 .container .about .info h1 {
+    color: white;
+    font-size: 54px;
+  }
+  main .sec1 .container .about .info h2 {
+    font-size: 25px;
+    color: #ffdd55;
+    padding: 10px 0px;
+  }
+  main .sec1 .container .about .info p {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    padding: 10px 0px;
+    width: 300px;
+  }
+  main .sec1 .container .about .info .btn {
+    background-color: #00c6ae;
+    border-radius: 15px;
+    padding: 0px 5px 5px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  main .sec1 .container .about .info .btn:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  main .sec1 .container .about .info .btn:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  main .sec1 .container .about .info .btn button {
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    background-color: black;
+  }
+  main .sec2 {
+    background-color: #eb7711;
+    margin: 70px 0px;
+  }
+  main .sec2 .container {
+    padding: 20px 0px;
+  }
+  main .sec2 .container .head {
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0px;
+  }
+  main .sec2 .container .head h1 {
+    color: black;
+    font-size: 44px;
+    font-weight: 800;
+    padding: 30px 0px;
+  }
+  main .sec2 .container .head p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  main .sec2 .container .block .box {
+    background-color: #a259ff;
+    border: 2px solid black;
+    width: 360px;
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+  }
+  main .sec2 .container .block .box:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  main .sec2 .container .block .box:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  main .sec2 .container .block .box .number {
+    background-color: #0acf83;
+    width: 250px;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: -30px;
+    margin: 0 auto;
+    left: 58px;
+  }
+  main .sec2 .container .block .box .number:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  main .sec2 .container .block .box .number:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  main .sec2 .container .block .box .number h1 {
+    margin: 0 auto;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  main .sec2 .container .block .box h2 {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 40px 0px;
+  }
+  main .sec2 .container .block .box p {
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width: 323px;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+  }
+  main .sec2 .container .block .box button {
+    padding: 7px 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffdd55;
+  }
+  main .sec2 .container .block .box button:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  main .sec2 .container .block .box button:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  main .sec3 {
+    display: block;
+    background-color: #0acf83;
+    margin-bottom: 70px;
+  }
+  main .sec3 .container {
+    padding: 100px 0px;
+  }
+  main .sec3 .container h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    padding: 30px 0px;
+    text-align: center;
+  }
+  main .sec3 .container .btn button {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    font-size: 44px;
+    font-weight: 700;
+    color: black;
+    border-radius: 20px;
+    background-color: #ffdd55;
+  }
+  main .sec3 .container .btn button:hover {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+  }
+  main .sec3 .container .btn button:active {
+    transform: scale(1);
+    transition: all 0.3s ease;
+  }
+  footer .container .head {
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+  }
+  footer .container .head h1 {
+    font-size: 35px;
+    width: 300px;
+    font-weight: 700;
+    color: #18191f;
+  }
+  footer .container h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px 0px;
+  }
+  footer .container .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .container .cards .first {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */
